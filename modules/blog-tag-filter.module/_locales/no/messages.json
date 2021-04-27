@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Velg kategori",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Standard filter tekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Bloggmerkefilter",
+    "description" : "",
+    "placeholders" : null
+  }
+}

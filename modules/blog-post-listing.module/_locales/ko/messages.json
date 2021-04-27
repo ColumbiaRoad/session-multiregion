@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "블로그 게시물 목록",
+    "description" : "",
+    "placeholders" : null
+  },
+  "number_of_posts.label" : {
+    "message" : "게시물 수",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.default" : {
+    "message" : "자세한 내용",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.label" : {
+    "message" : "자세히 알아보기 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog.label" : {
+    "message" : "블로그 선택",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.popular_posts" : {
+    "message" : "인기 게시물",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.recent_posts" : {
+    "message" : "최신 게시물",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.label" : {
+    "message" : "블로그 유형 선택",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.background_color.label" : {
+    "message" : "배경색",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "스타일 옵션",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.override_default_style.label" : {
+    "message" : "기본 스타일 재정의",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.text_color.label" : {
+    "message" : "텍스트 색",
+    "description" : "",
+    "placeholders" : null
+  }
+}

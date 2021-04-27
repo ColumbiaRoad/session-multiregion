@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "/session-multiregion/images/module-icons/menu.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 45974125628,
+  "label" : "Menu",
+  "is_available_for_new_content" : false
+}

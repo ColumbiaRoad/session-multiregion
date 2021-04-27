@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "ব্লগ পোস্ট তালিকা",
+    "description" : "",
+    "placeholders" : null
+  },
+  "number_of_posts.label" : {
+    "message" : "পোস্টের নাম্বার ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.default" : {
+    "message" : "আরও পড়ুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.label" : {
+    "message" : "আরও পাঠ্য পড়ুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog.label" : {
+    "message" : "ব্লগ নির্বাচন করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.popular_posts" : {
+    "message" : "জনপ্রিয় পোস্টগুলি",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.recent_posts" : {
+    "message" : "সাম্প্রতিক পোস্টগুলি ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.label" : {
+    "message" : "ব্লগ টাইপ নির্বাচন করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.background_color.label" : {
+    "message" : "পটভূমির রঙ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "স্টাইল বিকল্পগুলি",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.override_default_style.label" : {
+    "message" : "ডিফল্ট শৈলী ওভাররাইড করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.text_color.label" : {
+    "message" : "পাঠ্যের রঙ",
+    "description" : "",
+    "placeholders" : null
+  }
+}

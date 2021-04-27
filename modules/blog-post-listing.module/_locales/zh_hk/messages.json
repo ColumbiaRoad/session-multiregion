@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "網誌文章清單",
+    "description" : "",
+    "placeholders" : null
+  },
+  "number_of_posts.label" : {
+    "message" : "文章數量",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.default" : {
+    "message" : "閱讀更多",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.label" : {
+    "message" : "閱讀更多文字",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog.label" : {
+    "message" : "選取網誌",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.popular_posts" : {
+    "message" : "熱門文章",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.recent_posts" : {
+    "message" : "最近的文章",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.label" : {
+    "message" : "選取網誌類型",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.background_color.label" : {
+    "message" : "背景顏色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "樣式選項",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.override_default_style.label" : {
+    "message" : "覆寫預設樣式",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.text_color.label" : {
+    "message" : "文字顏色",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Lista med blogginlägg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "number_of_posts.label" : {
+    "message" : "Antal inlägg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.default" : {
+    "message" : "Läs mer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.label" : {
+    "message" : "Läs mer text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog.label" : {
+    "message" : "Välj bogg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.popular_posts" : {
+    "message" : "Populära inlägg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.recent_posts" : {
+    "message" : "Senaste inläggen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.label" : {
+    "message" : "Välj bloggtyp",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.background_color.label" : {
+    "message" : "Bakgrundsfärg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Stilalternativ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.override_default_style.label" : {
+    "message" : "Skriv över standardstil",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.text_color.label" : {
+    "message" : "Textfärg",
+    "description" : "",
+    "placeholders" : null
+  }
+}

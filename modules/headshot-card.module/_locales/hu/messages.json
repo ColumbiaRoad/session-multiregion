@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>A közhiedelemmel ellentétben a Lorem Ipsum nem csupán egy véletlenszerű szöveg. A gyökerei egy Kr. e. 45 körüli latin irodalmi szövegben keresendők, tehát ez a szöveg több, mint 2000 éves.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Leírás",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "otthoni_előadás",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Portré",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Név",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Portrékártya",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Szakfelügyelő",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Cím",
+    "description" : "",
+    "placeholders" : null
+  }
+}

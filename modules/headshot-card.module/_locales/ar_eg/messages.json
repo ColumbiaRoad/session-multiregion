@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>خلافًا للاعتقاد الشائع، فإن Lorem Ipsum ليس مجرد نص عشوائي. بل تعود جذوره إلى عمل أدبي لاتيني كلاسيكي منذ عام 45 قبل الميلاد، مما يجعل عمره أكثر من 2000 عام.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "الوصف",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "محاضرة_في المنزل",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "لقطة الرأس",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "الاسم",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "بطاقة لقطة الرأس",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "رئيس موظفي التعليم",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "العنوان",
+    "description" : "",
+    "placeholders" : null
+  }
+}

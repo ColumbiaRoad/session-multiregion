@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Unatoč uvriježenom mišljenju, Lorem Ipsum nije samo nasumičan tekst. Korijene vuče iz djela klasične latinske književnosti iz 45. g. pr. Kr. Stoga je stariji od 2000 godina.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Opis",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Slika profila",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Ime",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Kartica s fotografijom profila",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Upravitelj odjela za obrazovanje",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Naslov",
+    "description" : "",
+    "placeholders" : null
+  }
+}

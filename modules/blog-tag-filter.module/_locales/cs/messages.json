@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Vybrat kategorii",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Výchozí filtr textu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Filtr značek blogu",
+    "description" : "",
+    "placeholders" : null
+  }
+}

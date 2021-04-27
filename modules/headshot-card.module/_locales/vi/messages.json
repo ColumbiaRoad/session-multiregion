@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Trái ngược với suy nghĩ của nhiều người, Lorem Ipsum không chỉ đơn giản là một văn bản ngẫu nhiên. Văn bản này có nguồn gốc từ một tác phẩm văn học La-tinh cổ điển từ năm 45 TCN, đến nay đã hơn 2000 năm tuổi.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Mô tả",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "bài_giảng_tại_nhà",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Ảnh chụp cận mặt",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Tên",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Thẻ ảnh chụp cận mặt",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Giám đốc Đào tạo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Tiêu đề",
+    "description" : "",
+    "placeholders" : null
+  }
+}

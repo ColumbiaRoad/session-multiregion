@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "Списък на публикации в блог",
+    "description" : "",
+    "placeholders" : null
+  },
+  "number_of_posts.label" : {
+    "message" : "Брой публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.default" : {
+    "message" : "Прочетете повече",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more.label" : {
+    "message" : "Текст на прочетете повече",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog.label" : {
+    "message" : "Избор на блог",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.popular_posts" : {
+    "message" : "Популярни публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.choices.recent_posts" : {
+    "message" : "Скорошни публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "select_blog_type.label" : {
+    "message" : "Избор на тип блог",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.background_color.label" : {
+    "message" : "Цвят на фон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Опции за стил",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.override_default_style.label" : {
+    "message" : "Презаписване на стила по подразбиране",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.text_color.label" : {
+    "message" : "Цвят на текст",
+    "description" : "",
+    "placeholders" : null
+  }
+}

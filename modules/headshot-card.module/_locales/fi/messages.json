@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Yleisen käsityksen vastaisesti Lorem Ipsum ei ole vain satunnainen teksti. Sen juuret ovat vuonna 45 eaa. eli yli 2000 vuotta sitten klassiseksi latinaksi kirjoitetussa teoksessa.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Kuvaus",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "kotiluento",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Kasvokuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Nimi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Kasvokuvakortti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Koulutoimenjohtaja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Otsikko",
+    "description" : "",
+    "placeholders" : null
+  }
+}

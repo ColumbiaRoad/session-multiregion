@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Wybierz kategorię",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Domyślny tekst filtra",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Filtr tagów na blogach",
+    "description" : "",
+    "placeholders" : null
+  }
+}

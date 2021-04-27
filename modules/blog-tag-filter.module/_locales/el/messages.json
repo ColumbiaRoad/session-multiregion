@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Επιλογή κατηγορίας",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Προεπιλεγμένο κείμενο φίλτρου",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Φίλτρο ετικέτας blog",
+    "description" : "",
+    "placeholders" : null
+  }
+}

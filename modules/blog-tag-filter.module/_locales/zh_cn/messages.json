@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "选择类别",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "默认过滤器文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "博客标签筛选器",
+    "description" : "",
+    "placeholders" : null
+  }
+}

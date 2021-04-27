@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>與一般大眾所認知的不同，Lorem Ipsum 不只是隨意亂寫的文字。這段文字可追溯至公元前 45 年的一份古典拉丁文本，有超過 2000 歷史。</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "描述",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "頭部特寫",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "姓名",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "頭部特寫卡",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "首席教育主任",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "標題",
+    "description" : "",
+    "placeholders" : null
+  }
+}

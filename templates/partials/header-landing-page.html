@@ -1,0 +1,42 @@
+<!--
+  templateType: global_partial
+  label: Landing page header
+-->
+<header class="header header--landing-page">
+
+  {# Top dnd area #}
+  {% dnd_area 'header_dnd_top'
+    label='Top header',
+    class='header__dnd--top'
+  %}
+  {% end_dnd_area %}
+  {# End top dnd area #}
+
+  <div class="header__container">
+
+    {# Logo #}
+    <div class="header__logo">
+      {% module 'header_logo'
+        path='@hubspot/logo',
+        img={
+          'alt': 'Session logo',
+          'height': '36',
+          'override_inherited_src': false,
+          'src': get_asset_url('../../images/session-theme-logo.png'),
+          'width': '114'
+        }
+      %}
+    </div>
+    {# End logo #}
+
+  </div>
+
+  {# Bottom dnd area #}
+  {% dnd_area 'header_dnd_bottom'
+    label='Bottom header',
+    class='header__dnd--bottom'
+  %}
+  {% end_dnd_area %}
+  {# End bottom dnd area #}
+
+</header>

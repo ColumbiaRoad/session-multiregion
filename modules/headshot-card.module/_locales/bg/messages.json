@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Противно на често срещаното схващане, Lorem Ipsum не е просто случаен текст. Част е от творба на класически латински от 45 г. пр. н.е., което я прави на повече от 2000 години.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Описание",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Портретна снимка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Морт Рики",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Име",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Карта с портретна снимка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Главен директор по образованието",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Заглавие",
+    "description" : "",
+    "placeholders" : null
+  }
+}

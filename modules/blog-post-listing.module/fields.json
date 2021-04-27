@@ -1,0 +1,96 @@
+[ {
+  "id" : "select_blog",
+  "name" : "select_blog",
+  "label" : "Select blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog"
+}, {
+  "id" : "select_blog_type",
+  "name" : "select_blog_type",
+  "label" : "Select blog type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "recent_posts", "Recent Posts" ], [ "popular_posts", "Popular Posts" ] ],
+  "type" : "choice",
+  "default" : "recent_posts"
+}, {
+  "id" : "number_of_posts",
+  "name" : "number_of_posts",
+  "label" : "Number of posts",
+  "required" : true,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "max" : 3,
+  "step" : 1,
+  "type" : "number",
+  "default" : 1
+}, {
+  "id" : "read_more",
+  "name" : "read_more",
+  "label" : "Read more text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read More"
+}, {
+  "id" : "style",
+  "name" : "style",
+  "label" : "Style options",
+  "required" : true,
+  "locked" : false,
+  "children" : [ {
+    "id" : "style.override_default_style",
+    "name" : "override_default_style",
+    "label" : "Override default style",
+    "required" : true,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "style.background_color",
+    "name" : "background_color",
+    "label" : "Background color",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "style.override_default_style",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#FFF9E3",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "style.text_color",
+    "name" : "text_color",
+    "label" : "Text color",
+    "required" : true,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "style.override_default_style",
+      "controlling_value_regex" : "true",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#00326D",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

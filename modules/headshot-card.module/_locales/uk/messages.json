@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Всупереч поширеній думці, Lorem Ipsum — це не просто випадковий текст. Він сягає корінням у твір класичної латинської літератури з 45 р. до н.е.; таким чином, вік цього тексту перевищує 2000 років.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Опис",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Фото голови людини",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Морт Рікі",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Імʼя",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Фотокартка голови людини",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Директор з питань освіти",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Заголовок",
+    "description" : "",
+    "placeholders" : null
+  }
+}

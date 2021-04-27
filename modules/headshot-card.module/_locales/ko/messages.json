@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>일반적인 믿음과는 달리, Lorem Ipsum은 단순한 임의의 텍스트가 아니라 기원전 45년의 고전 라틴 문헌에 근거를 둔 2000년 이상된 개념입니다.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "설명",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "얼굴 사진",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "이름",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "얼굴 사진 카드",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "CEO(교육 책임자)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "제목",
+    "description" : "",
+    "placeholders" : null
+  }
+}

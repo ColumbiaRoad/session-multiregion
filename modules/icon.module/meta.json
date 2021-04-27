@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "master_language" : "en",
+  "icon" : "/session-multiregion/images/module-icons/certification.svg",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 45974268182,
+  "label" : "Icon",
+  "is_available_for_new_content" : true
+}

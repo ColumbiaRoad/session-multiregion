@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "描述",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "家庭讲座",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "头部特写",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "姓名",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "带头部特写的卡片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "首席教育官",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "标题",
+    "description" : "",
+    "placeholders" : null
+  }
+}

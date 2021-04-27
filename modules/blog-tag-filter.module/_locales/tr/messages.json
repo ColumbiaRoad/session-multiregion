@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Kategori seç",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Varsayılan filtre metni",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Blog etiket filtresi",
+    "description" : "",
+    "placeholders" : null
+  }
+}

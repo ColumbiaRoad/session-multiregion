@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Выбрать категорию",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Текст фильтра по умолчанию",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Фильтр тегов блога",
+    "description" : "",
+    "placeholders" : null
+  }
+}

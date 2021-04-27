@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Chọn hạng mục",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Văn bản bộ lọc mặc định",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Bộ lọc thẻ blog",
+    "description" : "",
+    "placeholders" : null
+  }
+}

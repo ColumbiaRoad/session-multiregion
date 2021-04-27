@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Berlawanan dengan kepercayaan umum, Lorem Ipsum bukan hanya teks acak. Ini berakar dari karya sastra Latin klasik tahun 45 SM, sehingga usianya sudah lebih dari 2000 tahun.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Deskripsi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Headshot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Nama",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Kartu headshot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Kepala Staf Pendidikan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Judul",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "選取類別",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "預設篩選文字",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "網誌標籤篩選",
+    "description" : "",
+    "placeholders" : null
+  }
+}

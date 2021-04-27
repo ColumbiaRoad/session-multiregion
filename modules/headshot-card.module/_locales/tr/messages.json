@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Yaygın inancın aksine Lorem Ipsum rastgele bir metin değildir. Kökleri M.Ö 45'ten kalma klasik Latin edebiyatına dayanır ve 2000 yıldan daha eskidir.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Açıklama",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Headshot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Ad",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Headshot kartı",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Baş Eğitim Sorumlusu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Başlık",
+    "description" : "",
+    "placeholders" : null
+  }
+}

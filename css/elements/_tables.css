@@ -1,0 +1,25 @@
+/* Tables */
+
+table {
+  border-spacing: 0;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  vertical-align: top;
+}
+
+tr:nth-child(odd) {
+  background-color: #eff7ff;
+}
+
+thead th,
+thead td {
+  border: none;
+  border-bottom-width: 2px;
+}
+
+thead th {
+  vertical-align: bottom;
+}

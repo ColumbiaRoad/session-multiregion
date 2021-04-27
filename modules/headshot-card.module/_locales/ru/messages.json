@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>Вопреки широко распространенному мнению, Lorem Ipsum — это не просто случайный текст. Его корни связаны с произведением классической латинской литературы 45 г. до н. э.; таким образом, ему более 2000 лет.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "Описание",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "home_lecture",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "Фотография головы",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Морт Рикки",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "Имя",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Карточка фотографии головы",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "Директор по образованию",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "Заголовок",
+    "description" : "",
+    "placeholders" : null
+  }
+}

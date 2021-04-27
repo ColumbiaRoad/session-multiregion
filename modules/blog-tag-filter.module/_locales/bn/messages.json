@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "বিভাগ নির্বাচন করুন",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "ডিফল্ট ফিল্টার পাঠ্য",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "ব্লগ ট্যাগ ফিল্টার",
+    "description" : "",
+    "placeholders" : null
+  }
+}

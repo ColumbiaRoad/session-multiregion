@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Välj kategori",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Standardfiltertext",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Filter för bloggetikett",
+    "description" : "",
+    "placeholders" : null
+  }
+}

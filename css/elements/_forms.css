@@ -1,0 +1,163 @@
+/* Base */
+
+.hs-form-field {
+  position: relative;
+}
+
+/* Form Title */
+
+.form-title {
+  margin: 0;
+  text-align: center;
+}
+
+.form-title ~ div > form {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Labels */
+
+.hs-form-field > label {
+  display: block;
+  margin-bottom: 0.35rem;
+  text-align: left;
+  width: auto;
+}
+
+/* Inputs */
+
+.input {
+  position: relative;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='number'],
+input[type='file'],
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 100% !important;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+fieldset {
+  max-width: 100% !important;
+}
+
+/* Inputs - Checkbox/Radio */
+
+form .inputs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inputs-list > li {
+  display: block;
+  margin: 0.7rem 0 0.7rem 0.7rem;
+  padding: 0;
+  width: 100%;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  border: none;
+  cursor: pointer;
+  height: auto;
+  line-height: normal;
+  margin-right: 0.35rem;
+  padding: 0;
+  width: auto;
+}
+
+/* Inputs - Select */
+
+.hs-fieldtype-select .input:after {
+  content: '\25BE';
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Inputs - Datepicker */
+
+.hs-fieldtype-date .input .hs-dateinput:before {
+  content: '\01F4C5';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fn-date-picker td.is-selected .pika-button {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.fn-date-picker td .pika-button:hover {
+  border-radius: 0 !important;
+}
+
+/* Headings and Text */
+
+form .hs-richtext img {
+  max-width: 100% !important;
+}
+
+form .header {
+  background-color: transparent;
+  border: none;
+}
+
+/* GDPR */
+
+.legal-consent-container .hs-form-booleancheckbox-display > span,
+.legal-consent-container .hs-form-booleancheckbox-display > span p {
+  line-height: 1.25;
+}
+
+/* Validation */
+
+.hs-error-msg,
+.hs-error-msgs {
+  margin-top: 0.35rem;
+}
+
+/* Submit */
+
+form input[type='submit'],
+form .hs-button {
+  cursor: pointer;
+  display: block;
+  letter-spacing: 0;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  transition: all 0.15s linear;
+  white-space: normal;
+  width: 100%;
+}
+
+/* Captcha */
+
+.grecaptcha-badge {
+  margin: 0 auto;
+}
+
+/* Inline Thank You Message */
+
+.submitted-message {
+  color: #fff;
+}

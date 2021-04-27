@@ -1,0 +1,397 @@
+<!--
+  templateType: global_partial
+  label: Page footer
+-->
+<footer class="footer footer--site-page">
+
+  {% module 'enable_footer_dnd'
+    path='../../modules/enable-dnd',
+    label='Drag and drop',
+    export_to_template_context=true,
+    no_wrapper=true
+  %}
+
+  {% if widget_data.enable_footer_dnd.enable_dnd %}
+
+    {# Drag and drop footer #}
+    {% dnd_area 'footer_dnd'
+      label='Footer',
+      class='footer__container footer__container--dnd'
+    %}
+
+      {# Footer top section #}
+      {% dnd_section %}
+
+        {# Navigation column one #}
+        {% dnd_column
+          width=3
+        %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/header',
+              label='Menu title column one',
+              header_tag='h4',
+              value='About'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/simple_menu',
+              label='Menu column one',
+              orientation='vertical'
+            %}
+              {% module_attribute 'menu_tree' is_json=True %}
+                [
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item One", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false},
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Two", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false},
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Three", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}
+                ]
+              {% end_module_attribute %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+        {# End navigation column one #}
+
+        {# Navigation column two #}
+        {% dnd_column
+          width=3,
+          offset=3
+        %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/header',
+              label='Menu title column three',
+              header_tag='h4',
+              value='Services'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/simple_menu',
+              label='Menu column three',
+              orientation='vertical'
+            %}
+              {% module_attribute 'menu_tree' is_json=True %}
+                [
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item One", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false},
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Two", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false},
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Three", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}
+                ]
+              {% end_module_attribute %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+        {# End navigation column two #}
+
+        {# Navigation column three #}
+        {% dnd_column
+          width=3,
+          offset=6
+        %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/header',
+              label='Menu title column three',
+              header_tag='h4',
+              value='News'
+            %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row %}
+            {% dnd_module
+              path='@hubspot/simple_menu',
+              label='Menu column three',
+              orientation='vertical'
+            %}
+              {% module_attribute 'menu_tree' is_json=True %}
+                [
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item One", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false},
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Two", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false},
+                  {"contentType": null, "subCategory": null, "pageLinkName": null, "pageLinkId": null, "isPublished": false, "categoryId": null, "linkParams": null, "linkLabel": "Menu Item Three", "linkTarget": null, "linkUrl": "#", "children": [], "isDeleted": false}
+                ]
+              {% end_module_attribute %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+        {# End navigation column three #}
+
+        {# Form column four #}
+        {% dnd_column
+          width=3,
+          offset=9
+        %}
+          {% dnd_row %}
+            {% dnd_module path='@hubspot/form' %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+        {% end_dnd_column %}
+        {# End form column four #}
+
+      {% end_dnd_section %}
+      {# End footer top section #}
+
+      {# Footer bottom section #}
+      {% dnd_section %}
+        {% dnd_column
+          width=12
+        %}
+
+          {# Social follow #}
+          {% dnd_row %}
+            {% dnd_module
+              path='../../modules/social-follow',
+              override_default_style=true,
+              social_links=[
+                {
+                  'social_account': 'facebook-f',
+                  'accessibility': {
+                    'title': 'Follow us on Facebook'
+                  }
+                },
+                {
+                  'social_account': 'linkedin-in',
+                  'accessibility': {
+                    'title': 'Follow us on LinkedIn'
+                  }
+                },
+                {
+                  'social_account': 'twitter',
+                  'accessibility': {
+                    'title': 'Follow us on Twitter'
+                  }
+                },
+                {
+                  'social_account': 'instagram',
+                  'accessibility': {
+                    'title': 'Follow us on Instagram'
+                  }
+                }
+              ]
+            %}
+            {% module_attribute 'style' is_json=True %}
+              {
+                "color": {
+                  "color": "#ffffff",
+                  "opacity": 100
+                },
+                "bg_color": {
+                  "color": "#1e2b33",
+                  "opacity": 0
+                },
+                "hover": {
+                  "color": {
+                    "color": "#1e2b33",
+                    "opacity": 100
+                  },
+                  "bg_color": {
+                    "color": "#ffffff",
+                    "opacity": 100
+                  }
+                }
+              }
+            {% end_module_attribute %}
+            {% end_dnd_module %}
+          {% end_dnd_row %}
+          {# End social follow #}
+
+        {% end_dnd_column %}
+      {% end_dnd_section %}
+      {# End footer bottom section #}
+
+    {% end_dnd_area %}
+    {# End drag and drop footer #}
+
+  {% else %}
+
+    {# Static footer #}
+    <div class="footer__container footer__container--static">
+
+      {# Footer top section #}
+      <div class="footer__row footer__row--one">
+
+        {# Navigation column one #}
+        <div class="footer__navigation">
+          {% module 'footer_menu_header_one'
+            path='@hubspot/header',
+            label='Menu title column one',
+            header_tag='h4',
+            overrideable=True,
+            value='About'
+          %}
+          {% module_block module 'footer_menu_one'
+            path='@hubspot/simple_menu',
+            label='Menu column one',
+            overrideable=True,
+            orientation='vertical'
+          %}
+            {% module_attribute 'menu_tree' is_json=True %}
+              [
+                {
+                  "linkLabel": "Menu Item One",
+                  "linkUrl": "#"
+                },
+                {
+                  "linkLabel": "Menu Item Two",
+                  "linkUrl": "#"
+                },
+                {
+                  "linkLabel": "Menu Item Three",
+                  "linkUrl": "#"
+                }
+              ]
+            {% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+        {# End navigation column one #}
+
+        {# Navigation column two #}
+        <div class="footer__navigation">
+          {% module 'footer_menu_header_two'
+            path='@hubspot/header',
+            label='Menu title column two',
+            header_tag='h4',
+            overrideable=True,
+            value='Services'
+          %}
+          {% module_block module 'footer_menu_two'
+            path='@hubspot/simple_menu',
+            label='Menu column two'
+            overrideable=True,
+            orientation='vertical',
+          %}
+            {% module_attribute 'menu_tree' is_json=True %}
+              [
+                {
+                  "linkLabel": "Menu Item One",
+                  "linkUrl": "#"
+                },
+                {
+                  "linkLabel": "Menu Item Two",
+                  "linkUrl": "#"
+                },
+                {
+                  "linkLabel": "Menu Item Three",
+                  "linkUrl": "#"
+                }
+              ]
+            {% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+        {# End navigation column two #}
+
+        {# Navigation column three #}
+        <div class="footer__navigation">
+          {% module 'footer_menu_header_three'
+            path='@hubspot/header',
+            label='Menu title column three'
+            header_tag='h4',
+            overrideable=True,
+            value='News'
+          %}
+          {% module_block module 'footer_menu_three'
+            path='@hubspot/simple_menu',
+            label='Menu column three',
+            overrideable=True,
+            orientation='vertical',
+          %}
+            {% module_attribute 'menu_tree' is_json=True %}
+              [
+                {
+                  "linkLabel": "Menu Item One",
+                  "linkUrl": "#"
+                },
+                {
+                  "linkLabel": "Menu Item Two",
+                  "linkUrl": "#"
+                },
+                {
+                  "linkLabel": "Menu Item Three",
+                  "linkUrl": "#"
+                }
+              ]
+            {% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+        {# End navigation column three #}
+
+        {# Footer form #}
+        <div class="footer__form">
+          {% module 'footer_form' path='@hubspot/form' %}
+        </div>
+        {# End footer form #}
+
+      </div>
+      {# End footer top section #}
+
+      {# Footer bottom section #}
+      <div class="footer__row footer__row--two">
+
+        {# Social Follow #}
+        <div class="footer__follow-me">
+          {% module_block module 'footer__follow-me'
+            path='../../modules/social-follow',
+            override_default_style=true,
+            social_links=[
+              {
+                'social_account': 'facebook-f',
+                'accessibility': {
+                  'title': 'Follow us on Facebook'
+                }
+              },
+              {
+                'social_account': 'linkedin-in',
+                'accessibility': {
+                  'title': 'Follow us on LinkedIn'
+                }
+              },
+              {
+                'social_account': 'twitter',
+                'accessibility': {
+                  'title': 'Follow us on Twitter'
+                }
+              },
+              {
+                'social_account': 'instagram',
+                'accessibility': {
+                  'title': 'Follow us on Instagram'
+                }
+              }
+            ]
+          %}
+            {% module_attribute 'style' is_json=True %}
+              {
+                "color": {
+                  "color": "#ffffff",
+                  "opacity": 100
+                },
+                "bg_color": {
+                  "color": "#1e2b33",
+                  "opacity": 0
+                },
+                "hover": {
+                  "color": {
+                    "color": "#1e2b33",
+                    "opacity": 100
+                  },
+                  "bg_color": {
+                    "color": "#ffffff",
+                    "opacity": 100
+                  }
+                }
+              }
+            {% end_module_attribute %}
+          {% end_module_block %}
+        </div>
+        {# End social follow #}
+
+      </div>
+      {# End footer bottom section #}
+
+    </div>
+    {# End static footer #}
+
+  {% endif %}
+
+</footer>

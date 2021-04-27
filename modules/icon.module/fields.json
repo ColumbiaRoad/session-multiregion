@@ -1,0 +1,85 @@
+[ {
+  "id" : "icon_field",
+  "name" : "icon_field",
+  "label" : "Icon",
+  "required" : true,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.0.10",
+  "type" : "icon",
+  "default" : {
+    "name" : "clock",
+    "unicode" : "f017",
+    "type" : "REGULAR"
+  }
+}, {
+  "id" : "accessibility",
+  "name" : "accessibility",
+  "label" : "Accessibility options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "purpose",
+    "name" : "purpose",
+    "label" : "Purpose",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "decorative", "Ignored by screen reader" ], [ "semantic", "Read by screen reader" ] ],
+    "type" : "choice",
+    "default" : "decorative"
+  }, {
+    "id" : "accessibility.title",
+    "name" : "title",
+    "label" : "Title",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "purpose",
+      "controlling_value_regex" : "semantic",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+}, {
+  "id" : "style",
+  "name" : "style",
+  "label" : "Style options",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "style.size",
+    "name" : "size",
+    "label" : "Size",
+    "help_text" : "Width in pixels",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 1,
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 16
+  }, {
+    "id" : "style.color",
+    "name" : "color",
+    "label" : "Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#00C6AB",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group"
+} ]

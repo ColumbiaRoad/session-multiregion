@@ -1,0 +1,13 @@
+<div class="icon-card">
+  <div class="icon-card__background">
+    <div class="icon-card__upper">
+      {% set loadingAttr = module.headshot.loading != 'disabled' ? 'loading="{{ module.headshot.loading }}"' : '' %}
+      <img class="icon-card__image" src="{{ module.headshot.src }}" alt="{{ module.headshot.alt }}" {{ loadingAttr }}>
+    </div>
+  </div>
+  <div class="icon-card__content">
+    <h3 class="icon-card__name">{{ module.human_name }}</h3>
+    <div class="icon-card__title">{{ module.title }}</div>
+    <div class="icon-card__text">{{ module.description }}</div>
+  </div>
+</div>

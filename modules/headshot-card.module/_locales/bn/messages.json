@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>জনপ্রিয় বিশ্বাসের বিপরীতে, লরেম ইপসাম কেবল এলোমেলো পাঠ্য নয়। খ্রিস্টপূর্ব ৪৫ সালের ধ্রুপদী ল্যাটিন সাহিত্যে এর শিকড় রয়েছে, যার ফলে এটি ২০০০ বছরেরও বেশি পুরানো</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "বর্ণনা",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "হোম_লেকচার",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "হেডশট",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "মর্ট রিকি",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "নাম ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "হেডশট কার্ড",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "প্রধান শিক্ষা কর্মকর্তা",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "শিরোনাম",
+    "description" : "",
+    "placeholders" : null
+  }
+}

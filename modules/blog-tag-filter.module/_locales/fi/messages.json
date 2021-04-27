@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Valitse luokka",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Suodattimen oletusteksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Blogin tunnistesuodatin",
+    "description" : "",
+    "placeholders" : null
+  }
+}

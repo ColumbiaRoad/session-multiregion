@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Вибрати категорію",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Текст фільтру за замовчуванням",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Фільтр тегів блогу",
+    "description" : "",
+    "placeholders" : null
+  }
+}

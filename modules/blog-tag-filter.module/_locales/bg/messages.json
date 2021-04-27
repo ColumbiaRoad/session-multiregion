@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Избор на категория",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Текст на филтър по подразбиране",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Филтър за етикети на блог",
+    "description" : "",
+    "placeholders" : null
+  }
+}

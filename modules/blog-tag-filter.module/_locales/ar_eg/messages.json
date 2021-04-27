@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "تحديد الفئة",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "نص عامل التصفية الافتراضي",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "عامل تصفية علامة المدونة",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "default_filter_text.default" : {
+    "message" : "Odaberi kategoriju",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_filter_text.label" : {
+    "message" : "Tekst zadanog filtra",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Filtar oznaka na blogu",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "description.default" : {
+    "message" : "<p>ตรงข้ามกับความเชื่อยอดนิยม Lorem Ipsum ไม่ได้เป็นเพียงแค่ชุดอักษรที่สุ่มขึ้นมา แต่มีรากฐานมาจากผลงานวรรณกรรมละตินคลาสสิกชิ้นหนึ่งในยุค 45 ปีก่อนคริสต์ศักราช ซึ่งเป็นเวลากว่า 2,000 ปีมาแล้ว</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "description.label" : {
+    "message" : "คำอธิบาย",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.default.alt" : {
+    "message" : "การสอน_ที่บ้าน",
+    "description" : "",
+    "placeholders" : null
+  },
+  "headshot.label" : {
+    "message" : "ภาพส่วนหัว",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.default" : {
+    "message" : "Mort Ricky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "human_name.label" : {
+    "message" : "ชื่อ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "บัตรที่มีรูปส่วนหัว",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.default" : {
+    "message" : "ผู้อำนวยการฝ่ายการศึกษา",
+    "description" : "",
+    "placeholders" : null
+  },
+  "title.label" : {
+    "message" : "ชื่อเรื่อง",
+    "description" : "",
+    "placeholders" : null
+  }
+}
