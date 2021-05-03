@@ -1,0 +1,22 @@
+<!-- module html  -->
+
+{% if content.parent_blog %} 
+    {# In blog listings/posts, the slug is defined on the parent_blog property #}
+    {% set path_base = content.parent_blog.slug %} 
+{% else %}
+    {% set path_base = content.slug %} 
+{% endif %} 
+{% set path_info = path_base|split('/', 3) %}
+{% set current_language_slug = path_info[0] %} 
+{% set current_region_slug = path_info[1] %} 
+{% set current_page_slug = path_info[2] %} 
+
+{# find the menu needed for the current language/region from the module settings #}
+{% set currentRegion = (module.regions|selectattr('region_slug', 'equalto', current_region_slug))[0] %}	
+{% set currentLanguage = (currentRegion.languages|selectattr('language_slug', 'equalto', current_language_slug))[0] %}	
+{% set customMenu = currentLanguage.language_menu %}	
+
+    <!-- DEBUG {{ customMenu }} -->
+
+{# render menu #}
+{% menu id="{{ customMenu }}" site_map_name='Default', overrideable=True, root_type='site_root', flyouts='true', max_levels='2', flow='horizontal', label='Advanced Menu' %} 

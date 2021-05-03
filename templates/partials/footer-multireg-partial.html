@@ -1,0 +1,97 @@
+<!--
+  templateType: global_partial
+  label: Page footer
+-->
+<footer class="footer footer--site-page">
+
+{% module 'enable_footer_dnd'
+  path='../../modules/enable-dnd',
+  label='Drag and drop',
+  export_to_template_context=true,
+  no_wrapper=true
+%}
+
+
+  {# Static footer #}
+  <div class="footer__container footer__container--static">
+    
+    {# Footer top section #}
+    <div class="footer__row ">
+
+    {% module 'footer_navigation_primary'
+        path='../../modules/footer-multireg',
+        label='Multiregion navigation'
+      %}
+
+    </div>
+    {# End footer top section #}
+
+    {# Footer bottom section #}
+    <div class="footer__row footer__row--two">
+
+      {# Social Follow #}
+      <div class="footer__follow-me">
+        {% module_block module 'footer__follow-me'
+          path='../../modules/social-follow',
+          override_default_style=true,
+          social_links=[
+            {
+              'social_account': 'facebook-f',
+              'accessibility': {
+                'title': 'Follow us on Facebook'
+              }
+            },
+            {
+              'social_account': 'linkedin-in',
+              'accessibility': {
+                'title': 'Follow us on LinkedIn'
+              }
+            },
+            {
+              'social_account': 'twitter',
+              'accessibility': {
+                'title': 'Follow us on Twitter'
+              }
+            },
+            {
+              'social_account': 'instagram',
+              'accessibility': {
+                'title': 'Follow us on Instagram'
+              }
+            }
+          ]
+        %}
+          {% module_attribute 'style' is_json=True %}
+            {
+              "color": {
+                "color": "#ffffff",
+                "opacity": 100
+              },
+              "bg_color": {
+                "color": "#1e2b33",
+                "opacity": 0
+              },
+              "hover": {
+                "color": {
+                  "color": "#1e2b33",
+                  "opacity": 100
+                },
+                "bg_color": {
+                  "color": "#ffffff",
+                  "opacity": 100
+                }
+              }
+            }
+          {% end_module_attribute %}
+        {% end_module_block %}
+      </div>
+      {# End social follow #}
+
+    </div>
+    {# End footer bottom section #}
+
+  </div>
+  {# End static footer #}
+
+
+</footer>

@@ -1,0 +1,165 @@
+[
+  {
+    "id": "a1955106-6ef6-593b-9548-ede954b556d9",
+    "name": "regions",
+    "label": "Regions",
+    "required": false,
+    "locked": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "sorting_label_field": null,
+      "default": 2
+    },
+    "children": [
+      {
+        "id": "142bdace-ffbd-38e6-a87a-6d0b4010547e",
+        "name": "region_label",
+        "label": "Region label",
+        "required": false,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text"
+      },
+      {
+        "id": "46ef0240-1d36-9d6c-de2f-0e0788838a81",
+        "name": "region_slug",
+        "label": "Region slug",
+        "help_text": "The URL part used for pages within this region.",
+        "required": true,
+        "locked": false,
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default": "finland"
+      },
+      {
+        "id": "9101c28e-9d85-118a-4827-a9907ea1e9ea",
+        "name": "languages",
+        "label": "Languages",
+        "inline_help_text": "Available languages for this region.",
+        "required": false,
+        "locked": false,
+        "occurrence": {
+          "min": 1,
+          "max": null,
+          "sorting_label_field": null,
+          "default": 1
+        },
+        "children": [
+          {
+            "id": "98cffba9-aa67-c257-a859-6eab1cb4f585",
+            "name": "language_label",
+            "label": "Language label",
+            "inline_help_text": "",
+            "required": false,
+            "locked": false,
+            "validation_regex": "",
+            "placeholder": "Insert language label",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "default": ""
+          },
+          {
+            "id": "1ed295bc-a6c2-7a2f-7aa5-119a924c8447",
+            "name": "language_slug",
+            "label": "Language slug",
+            "inline_help_text": "",
+            "required": true,
+            "locked": false,
+            "validation_regex": "",
+            "placeholder": "insert language slug",
+            "allow_new_line": false,
+            "show_emoji_picker": false,
+            "type": "text",
+            "default": "fi"
+          },
+          {
+            "id": "b8a13325-c0aa-5727-29e0-376305d7b9fb",
+            "name": "default_region_language",
+            "label": "Default Region Language",
+            "help_text": "This should be the default language when someone clicks the region.",
+            "inline_help_text": "",
+            "required": false,
+            "locked": false,
+            "display": "checkbox",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "id": "502693d4-8e78-7924-e8fd-7d05ed1821c9",
+            "name": "language_menu",
+            "label": "Menu",
+            "inline_help_text": "The HubSpot menu that should be displayed when a page from this region & language is visited.",
+            "required": true,
+            "locked": false,
+            "type": "menu",
+            "default": 38658461786
+          }
+        ],
+        "tab": "CONTENT",
+        "expanded": false,
+        "type": "group",
+        "default": [
+          {
+            "language_label": "Language",
+            "language_slug": "finland",
+            "default_region_language": false,
+            "language_menu": 38658461786
+          }
+        ]
+      }
+    ],
+    "tab": "CONTENT",
+    "expanded": false,
+    "type": "group",
+    "default": [
+      {
+        "region_slug": "finland",
+        "languages": [
+          {
+            "language_label": "Language",
+            "language_slug": "finland",
+            "default_region_language": false,
+            "language_menu": 38658461786,
+            "select_country_label": "Select Country",
+            "country_title_label": "Country",
+            "language_title_label": "Language",
+            "cta": {
+              "cta_type": "btn",
+              "cta_style": "primary",
+              "cta": "",
+              "button_text": "Get Started",
+              "link": "#"
+            }
+          }
+        ]
+      },
+      {
+        "region_slug": "finland",
+        "languages": [
+          {
+            "language_label": "Language",
+            "language_slug": "finland",
+            "default_region_language": false,
+            "language_menu": 38658461786,
+            "select_country_label": "Select Country",
+            "country_title_label": "Country",
+            "language_title_label": "Language",
+            "cta": {
+              "cta_type": "btn",
+              "cta_style": "primary",
+              "cta": "",
+              "button_text": "Get Started",
+              "link": "#"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
