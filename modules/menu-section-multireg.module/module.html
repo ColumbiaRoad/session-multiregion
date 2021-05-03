@@ -1,88 +1,304 @@
 {# Default menu item classes #}
 
 {% macro defaultItemClasses() %}
-  {{
-   {
-     'class': 'no-submenu menu-item hs-skip-lang-url-rewrite'
-   }|xmlattr
-  }}
- {% endmacro %}
- 
- {# Menu item classes if a menu item has a child menu #}
- 
- {% macro childItemClasses() %}
-  {{
-   {
-     'class': 'has-submenu menu-item hs-skip-lang-url-rewrite'
-   }|xmlattr
-  }}
- {% endmacro %}
- 
- {# Menu item link attributes if the menu item is the current active page #}
- 
- {% macro activeNode() %}
-  {{
-   {
-     'class': 'menu-link active-item',
-   }|xmlattr
-  }}
- {% endmacro %}
- 
- {# Menu item link classes if menu item is the parent of the current active page #}
- 
- {% macro activeBranch() %}
-  {{
-   {
-     'class': 'menu-link active-branch'
-   }|xmlattr
- 
-  }}
- {% endmacro %}
- 
- {# Menu item link attribute if the menu item is set to open in a new window #}
- 
- {% macro linkTarget() %}
  {{
-   {
-     'target': '_blank',
-     'rel': 'noopener'
-   }|xmlattr
+  {
+    'class': 'no-submenu menu-item hs-skip-lang-url-rewrite'
+  }|xmlattr
  }}
- {% endmacro %}
- 
- {# Navigation menu item macro #}
- 
- {% macro link(node) %}
- 
-   <li {{ childItemClasses() if node.children else defaultItemClasses() }}>
-     <a href="{{ node.url if node.url else 'javascript:;' }}" class="menu-link" {{ activeBranch() if node.activeBranch }} {{ activeNode() if node.activeNode }} {{ linkTarget() if node.linkTarget }}>{{ node.label }}</a>
- 
-     {% if node.children %}
-       <input type="checkbox" id="{{ node.label }}" class="submenu-toggle">
-       <label class="menu-arrow" for="{{ node.label }}">
-         <span class="menu-child-toggle-icon">
-           {% icon name="chevron-down" style="SOLID", width="16", purpose="semantic", title="Open the submenu", no_wrapper=True %}
-         </span>
-       </label>
-       {{ renderNavigation(node) }}
-     {% endif %}
-   </li>
- 
- {% endmacro %}
- 
- {# Navigation submenu macro #}
- 
- {% macro renderNavigation(menuTree) %}
-   {% set level = level + 1 %}
-   <ul class="submenu level-{{ level }}">
-     {% for node in menuTree.children %}
-       {{ link(node) }}
-     {% endfor %}
-   </ul>
- {% endmacro %}
- 
- {# Main navigation wrapper #}
- 
- <nav aria-label="Main menu" class="navigation-primary">
-   {{ renderNavigation(menu(module.primary_menu_field)) }}
- </nav>
+{% endmacro %}
+
+{# Menu item classes if a menu item has a child menu #}
+
+{% macro childItemClasses() %}
+ {{
+  {
+    'class': 'has-submenu menu-item hs-skip-lang-url-rewrite'
+  }|xmlattr
+ }}
+{% endmacro %}
+
+{# Menu item link attributes if the menu item is the current active page #}
+
+{% macro activeNode() %}
+ {{
+  {
+    'class': 'menu-link active-item',
+  }|xmlattr
+ }}
+{% endmacro %}
+
+{# Menu item link classes if menu item is the parent of the current active page #}
+
+{% macro activeBranch() %}
+ {{
+  {
+    'class': 'menu-link active-branch'
+  }|xmlattr
+
+ }}
+{% endmacro %}
+
+{# Menu item link attribute if the menu item is set to open in a new window #}
+
+{% macro linkTarget() %}
+{{
+  {
+    'target': '_blank',
+    'rel': 'noopener'
+  }|xmlattr
+}}
+{% endmacro %}
+
+{# CR CUSTOM MENU START #}
+{% if content.parent_blog %} 
+  {# In blog listings/posts, the slug is defined on the parent_blog property #}
+  {% set path_base = content.parent_blog.slug %} 
+{% else %}
+  {% set path_base = content.slug %} 
+{% endif %} 
+{% set path_info = path_base|split('/', 3) %}
+{% set current_language_slug = path_info[0] %} 
+{% set current_region_slug = path_info[1] %} 
+{% set current_page_slug = path_info[2] %} 
+
+{% set language_labels = {} %}
+{% for region in module.regions %}
+  {% for language in regions %}
+    {% do language_labels[language.language_slug]=language.language_label %}
+  {% endfor%}
+{% endfor %}
+
+{# find the menu needed for the current language/region from the module settings #}
+{# no clue why I need to do [0][0] and not just [0] ... weird hubl #}
+{% set currentRegion = (module.regions|selectattr('region_slug', 'equalto', current_region_slug))[0] %}	
+{% set currentLanguage = (currentRegion.languages|selectattr('language_slug', 'equalto', current_language_slug))[0] %}	
+{% set customMenu = currentLanguage.language_menu %}	
+
+{% set node = menu(customMenu) %}
+{# CR CUSTOM MENU END (see switcher below though) #}
+
+{# Navigation menu item macro #}
+
+{% macro link(node) %}
+
+  <li {{ childItemClasses() if node.children else defaultItemClasses() }}>
+    <a href="{{ node.url if node.url else 'javascript:;' }}" class="menu-link" {{ activeBranch() if node.activeBranch }} {{ activeNode() if node.activeNode }} {{ linkTarget() if node.linkTarget }}>{{ node.label }}</a>
+
+    {% if node.children %}
+      <input type="checkbox" id="{{ node.label }}" class="submenu-toggle">
+      <label class="menu-arrow" for="{{ node.label }}">
+        <span class="menu-child-toggle-icon">
+          {% icon name="chevron-down" style="SOLID", width="16", purpose="semantic", title="Open the submenu", no_wrapper=True %}
+        </span>
+      </label>
+      {{ renderNavigation(node) }}
+    {% endif %}
+  </li>
+
+{% endmacro %}
+
+{# Navigation submenu macro #}
+
+{% macro renderNavigation(menuTree) %}
+  {% set level = level + 1 %}
+  <ul class="submenu level-{{ level }}">
+    {% for node in menuTree.children %}
+      {{ link(node) }}
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{# Main navigation wrapper #}
+
+<nav aria-label="Main menu" class="navigation-primary">
+  {{ renderNavigation(menu(customMenu)) }}
+  {# START CUSTOM LANGUAGE/REGION SWITCHER #}
+
+	{# Dictionary of language labels 
+		TODO not needed anymore
+	#}
+		
+	<div class="cr-language-wrapper">
+  <span
+    id="hs_cos_wrapper_body_dnd_area-module-1_"
+    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher"
+    style=""
+    data-hs-cos-general-type="widget"
+    data-hs-cos-type="language_switcher"
+    >
+    <div class="lang_switcher_class">
+    <div class="globe_class dropdown" onclick="">
+      <a class="menu-item" href="javascript:void(0)"> 
+        <span class="menu-link">
+          {% if currentLanguage and currentLanguage.select_country_label %}
+            {{ currentLanguage.select_country_label }}
+          {% else %}
+            {# Default #}
+            Select country
+          {% endif %}	
+        </span>
+        <i class="fa fa-angle-down nav-link-arrow"></i>
+      </a>
+      {# This is the visual dropdown that gets triggered #}
+      <div class="region_lang_wrapper">
+        <div class="region_list_class">
+          <span class="list_title">
+            {{ (currentLanguage and currentLanguage.country_title_label) ? currentLanguage.country_title_label : 'Country' }}
+          </span>
+          <ul>
+            {# find the default language #} 
+            {% for region in module.regions %}
+              {# default = first #}
+              {% set default_region_language = region.languages|first %} 
+              {% for language in region.languages %} 
+                {% if language.default_region_language %} 
+                  {# TODO this might not work actually:... 
+                     use the selectattr method?
+                  https://community.hubspot.com/t5/CMS-Development/How-to-change-a-variable-outside-of-a-for-loop-Scoping-Issues/td-p/211117 #}
+                  {% set default_region_language = language %} 
+                {% endif %} 
+              {% endfor %} 
+              {% set isCurrentRegion = region.region_slug == current_region_slug %}
+            <li>
+              {# this function seems to only support a [] regex? why? #}
+              {# {{path_base|regex_replace("^\w{2,3}\/(\w+\/)?", default_region_language.language_slug ~ '/' ~ region.region_slug ~ '/')}} #}
+              <a
+                data-region="{{ region.region_slug }}"
+                {# 
+                  - This assumes that the default language of that region exists! 
+                  - For now this bring us to the homepage of that language & region. 
+                  By refactoring a bit the code below we could bring us to the default language variant of the current page.
+                #}
+                href="/{{ default_region_language.language_slug ~ '/' ~ region.region_slug}}"
+                {# href="/{{ default_region_language.language_slug ~ '/' ~ region.region_slug ~ '/' ~ (path_info[2] ? path_info[2] : '')}}" #}
+                class="{% if isCurrentRegion %}selected{% endif %}">
+                {{ region.region_label }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>		
+        <div class="region_lang_divider"></div>
+        {% for region in module.regions %}
+          {# not sure if this works! #}
+          {% set isCurrentRegion = region.region_slug == current_region_slug %}
+          <div class="lang_list_class"
+            data-region="{{ region.region_slug }}"
+            {% if !isCurrentRegion %} style="display: none" {% endif %}
+          >	
+            <span class="list_title">
+              {{ (currentLanguage and currentLanguage.language_title_label) ? currentLanguage.language_title_label : 'Language' }}
+            </span>
+            <ul>
+              {% set defined_language_set = region.languages %}
+              {% set language_set = region.languages %} 
+
+              {# SET THE LANGUAGE PAGES OF THIS REGION #}
+              {% if !isCurrentRegion || (!content.translated_content && !(content.parent_blog && content.parent_blog.translations)) %} 
+                {# 
+                  If not the current region: USE HubDB
+                    also do this if there is no translated content in the page data (which would otherwise be the current region, see elif)
+                  The current HubSpot page scope data only holds data for current region.
+                  The HubDB maps the current page onto equivalent pages in different regions.
+
+                  Why not use the HubDB for everything? Because the page data approach allows to lazily _not_ fill in entries there and work by default.
+                  Let's not do admin when it's not needed. E.g. when a page is unique and there is no equivalent in other regions, 
+                  we don't want to require filling the HubDB for that page to switch to a different language 
+                #}
+                {# Reset the language set #}
+                {% set language_set = [] %}
+
+                {# initialize! #}
+
+                {# step 1: find the page key: this is the key to the set of pages across region & language that are the same #}
+                {% set page_key = null %}
+                {# TODO what if page slug is empty (home page or default page) #}
+                {% set table = hubdb_table_rows(4357806, dbQuery) %}	
+                {% set currentPageTable = table|selectattr('region', 'equalto', current_region_slug)|selectattr('language', 'equalto', current_language_slug)|selectattr('slug', 'equalto', current_page_slug) %}
+
+                {# TODO: test for length > 0 ... #}
+                {% set page_key = currentPageTable[0]["key"] %}
+
+
+                {# get all pages with the same key in the region that we're now looping over #}
+                {% if page_key != null %} 
+                  {% set allEquivalentRegionPages = table|selectattr('key', 'equalto', page_key)|selectattr('region', 'equalto', region.region_slug) %}	
+                  {% for eqPage in allEquivalentRegionPages %}
+                    {# TODO: use labels defined, see also below #}
+                    {% do 
+                      language_set.append({ 
+                        language_label:	(eqPage.language in language_labels ? language_labels[eqPage.language] : "Label for " ~ eqPage.language ~ " not defined"),
+                        language_slug:	eqPage.language,
+                        page_link: '/' ~ eqPage.language ~ '/' ~ eqPage.region ~ '/' ~ eqPage.slug
+                      })
+                    %}
+                  {% endfor %}
+                {% endif %}
+                {# debug set: {{ language_set }} #}
+              {% else %} 
+                {# USE PAGE SCOPE DATA #}
+                {# TODO NOTE: content.translated_content is empty on blog listings at least 
+                  content.parent_blog.translations exists
+                #}
+                {# means that the reagion we loop over is the current one, and we have access to page data #}
+                {# current page holds data of translated pages for current region (current Hub translations page group) #}
+                {% set language_set = [] %} 
+                {# add the current page language to the language set #} 
+                {% do language_set.append({
+                  language_label: (current_language_slug in language_labels ? language_labels[current_language_slug] : current_language_slug),
+                  language_slug: current_language_slug,
+                  page_link: "#"  
+                }) %}
+                {# add translations - this data will only be present for the current region only #} 
+                {% if content.translated_content %}
+                  {# content.translated_content exists for non-blog content #}
+                  {% for translation in content.translated_content %} 
+                    {% do language_set.append({
+                      language_label: (current_language_slug in language_labels ? language_labels[translation.language] : translation.language),
+                      language_slug: translation.language,
+                      page_link: translation.absolute_url
+                    }) %}
+                  {% endfor %} 
+                {% elif content.parent_blog && content.parent_blog.translations %}
+                  {# content.parent_blog.translations exists for blog content #}
+                  {% for translation in content.parent_blog.translations %} 
+                    {% do language_set.append({
+                      language_label: (current_language_slug in language_labels ? language_labels[translation.language] : translation.language),
+                      language_slug: translation.language,
+                      page_link: translation.absolute_url
+                    }) %}
+                  {% endfor %} 
+                {% endif %}
+              {% endif %} 
+
+              {# RENDER LANGUAGES FOR THIS REGION #}
+              {% for language in defined_language_set %} 
+                {% set isCurrentLanguage = language.language_slug == current_language_slug %}
+                {# initialize URL to homepage #}
+                {% set link = '/' ~ language.language_slug ~ '/' ~ region.region_slug ~ '/' %}
+                {# check if we have an equivalent URL for this one! #}
+                {# can't set a variable outside of for loop scope ... https://community.hubspot.com/t5/CMS-Development/How-to-assign-value-to-an-array-in-a-for-loop/m-p/32441#M3133 #}
+                {% set eqLangs = language_set|selectattr('language_slug', 'equalto', language.language_slug) %}
+                {% if eqLangs|length > 0 %} 
+                  {% set link = eqLangs[0].page_link %}
+                  {% endif %}
+                <li>
+                  <a
+                    class="lang_switcher_link"
+                    data-language="{{ language.language_slug}}"
+                    class="{% if isCurrentLanguage %}selected{% endif %}"
+                    href="{{ link }}"
+                    >{{ language.language_label }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>	
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+  </span>
+  </div>
+  {# END CUSTOM LANGUAGE #}
+</nav>

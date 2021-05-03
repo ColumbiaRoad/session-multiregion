@@ -56,14 +56,15 @@
       </label>
       <div class="header__navigation">
         {% module 'header_navigation_primary'
-          path='../../modules/menu-section',
-          label='Primary navigation'
+          path='../../modules/menu-section-multireg',
+          label='Multiregion navigation'
         %}
       </div>
     </div>
     {# End main navigation #}
 
     {# Language toggle #}
+    {#
     {% if content.translated_content.values()|selectattr('published')|length || is_listing_view && group.translations %}
       <div class="header__language-switcher">
         <div class="header__language-switcher-label">
@@ -76,6 +77,7 @@
         </div>
       </div>
     {% endif %}
+    #}
     {# End language toggle #}
 
   </div>
