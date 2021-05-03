@@ -1,0 +1,9 @@
+{
+  "html.format.templating": false,
+  "files.associations": {
+    "*.html": "html-hubl "
+  },
+  "[html-hubl]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
