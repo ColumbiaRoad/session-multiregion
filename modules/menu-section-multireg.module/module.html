@@ -51,6 +51,10 @@
 {% endmacro %}
 
 {# CR CUSTOM MENU START #}
+{#
+  This section finds determines current language, region and slug of this page.
+  It also finds the menu that should be rendered from the module settings.
+#}
 {% if content.parent_blog %} 
   {# In blog listings/posts, the slug is defined on the parent_blog property #}
   {% set path_base = content.parent_blog.slug %} 
@@ -70,7 +74,6 @@
 {% endfor %}
 
 {# find the menu needed for the current language/region from the module settings #}
-{# no clue why I need to do [0][0] and not just [0] ... weird hubl #}
 {% set currentRegion = (module.regions|selectattr('region_slug', 'equalto', current_region_slug))[0] %}	
 {% set currentLanguage = (currentRegion.languages|selectattr('language_slug', 'equalto', current_language_slug))[0] %}	
 {% set customMenu = currentLanguage.language_menu %}	
@@ -115,10 +118,6 @@
   {{ renderNavigation(menu(customMenu)) }}
   {# START CUSTOM LANGUAGE/REGION SWITCHER #}
 
-	{# Dictionary of language labels 
-		TODO not needed anymore
-	#}
-		
 	<div class="cr-language-wrapper">
   <span
     id="hs_cos_wrapper_body_dnd_area-module-1_"
@@ -153,16 +152,13 @@
               {% set default_region_language = region.languages|first %} 
               {% for language in region.languages %} 
                 {% if language.default_region_language %} 
-                  {# TODO this might not work actually:... 
-                     use the selectattr method?
+                  {# TODO selectattr might also be more reliable here
                   https://community.hubspot.com/t5/CMS-Development/How-to-change-a-variable-outside-of-a-for-loop-Scoping-Issues/td-p/211117 #}
                   {% set default_region_language = language %} 
                 {% endif %} 
               {% endfor %} 
               {% set isCurrentRegion = region.region_slug == current_region_slug %}
             <li>
-              {# this function seems to only support a [] regex? why? #}
-              {# {{path_base|regex_replace("^\w{2,3}\/(\w+\/)?", default_region_language.language_slug ~ '/' ~ region.region_slug ~ '/')}} #}
               <a
                 data-region="{{ region.region_slug }}"
                 {# 
