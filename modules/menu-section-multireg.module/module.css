@@ -292,7 +292,8 @@
 
 .selected,
 .region_list_class li:hover {
-  font-weight: 500;
+  /* font-weight: 500; */
+  color: #00c6ab !important;
 }
 
 .region_lang_wrapper {
